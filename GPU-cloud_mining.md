@@ -48,8 +48,9 @@ An **Amazon Machine Image (AMI)** _"provides the information required to launch 
 
 For our purposes, we need to use the following AMI: 
 
-* IMAGE: **ami-2cbf3e44** for US-East (Ubuntu Server 14.04 LTS (HVM) – CUDA 6.5)
+* IMAGE: **ami-d05e75b8** for US-East (Ubuntu Server 14.04 LTS (HVM) – CUDA 7.5)
 * STORAGE: Use at least 8 GB, 20+ GB recommended
+* Refrence: http://tleyden.github.io/blog/2015/11/22/cuda-7-dot-5-on-aws-gpu-instance-running-ubuntu-14-dot-04/
 
 How can we find it? To find a Linux AMI using the Images page:
 
@@ -57,13 +58,13 @@ How can we find it? To find a Linux AMI using the Images page:
 * From the navigation bar, select **US East (N.Virginia)**;  
 * In the navigation pane, click **Images -> AMIs**; 
 * Switch to **Public Images** next to the search filter (the default is _"Owned by Me"_ which will be at first empty, since you do not yet own any AMI)
-* Click on the search filter and then (search by) _AMI ID_ -> **ami-2cbf3e44**
+* Click on the search filter and then (search by) _AMI ID_ -> **ami-d05e75b8**
 
 _Note: Make always sure you are in the correct region (US East, N.Virginia as we said) otherwise you will not see the AMI we are insterested in on the list._
 
-The **ami-2cbf3e44**, like all the ubuntu 14.04 images, is supported by Ethereum Frontier, but in addition this pre-built AMI has all the NVIDIA GPU drivers, OpenCL, etc... all pre-installed. 
+The **ami-d05e75b8**, like all the ubuntu 14.04 images, is supported by Ethereum Frontier, but in addition this pre-built AMI has all the NVIDIA GPU drivers, OpenCL, etc... all pre-installed. 
 
-* Select the **ami-2cbf3e44** and click on the blue button, **"Launch"**.
+* Select the **ami-d05e75b8** and click on the blue button, **"Launch"**.
 
 ###Step 3 - Customize and review your instance
 
